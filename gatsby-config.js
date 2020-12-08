@@ -3,6 +3,8 @@ module.exports = {
     title: `mz32.dev`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@mizunomi32`,
+    eyecatch: `eyecatch`,
+    siteUrl: `https://mz32.dev`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -87,6 +89,7 @@ module.exports = {
         ]
       }
     },
+    `gatsby-plugin-sitemap`,
     // `gatsby-plugin-postcss`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

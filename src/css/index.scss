@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    @apply bg-blue-100;
+    @apply bg-orange-100;
 }
 .roundedImage {
     div {
@@ -22,12 +22,15 @@ body {
         @apply text-blue-600 ;
     }
     h1 {
-        @apply text-4xl font-bold my-4 border-b-2 border-teal-300;
+        @apply text-4xl font-bold py-4 border-b-2 border-t-2 border-orange-300 bg-white;
+    }
+    h2 {
+        @apply text-4xl font-bold py-4 border-b-2 border-orange-300;
     }
     blockquote {
-        @apply bg-gray-200 pr-8 pl-12 py-4 shadow-lg border-l-8 border-teal-300 relative;
+        @apply bg-white pr-8 pl-12 py-4 shadow-lg border-l-8 border-orange-300 relative;
         &::before{
-            @apply absolute text-teal-300;
+            @apply absolute text-orange-300;
             top: 7px;
             left: 0;
             content: "“";

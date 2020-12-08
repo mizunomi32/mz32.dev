@@ -15,8 +15,10 @@ type SEOProps = {
   lang?: string,
   meta?: any,
   title: string,
+  eyecatch?: string,
 };
-const SEO: React.FC<SEOProps> = ({ description, lang, meta, title }) => {
+
+const SEO: React.FC<SEOProps> = ({ description, lang, meta, title, eyecatch }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -25,6 +27,7 @@ const SEO: React.FC<SEOProps> = ({ description, lang, meta, title }) => {
             title
             description
             author
+            eyecatch
           }
         }
       }
@@ -32,7 +35,7 @@ const SEO: React.FC<SEOProps> = ({ description, lang, meta, title }) => {
   );
 
   const metaDescription = description || site.siteMetadata.description;
-
+  const metaEyecatch = eyecatch || site.siteMetadata.eyecatch;
   return (
     <Helmet
       htmlAttributes={{
@@ -73,6 +76,10 @@ const SEO: React.FC<SEOProps> = ({ description, lang, meta, title }) => {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name: `og:image`,
+          content: metaEyecatch,
+        }
       ].concat(meta)}
     />
   );
@@ -82,6 +89,7 @@ SEO.defaultProps = {
   lang: `ja`,
   meta: [],
   description: ``,
+  eyecatch: ``
 };
 
 export default SEO;

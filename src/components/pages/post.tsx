@@ -44,7 +44,10 @@ const Post: React.FC<PropsType>  = ({ data })=>{
             dangerouslySetInnerHTML={{
             __html: `${ post.html }`,
             }} />
-            <div className="grid gap-2 shadow-md my-4 p-6 bg-gray-300 ">
+            <div>
+                ソーシャルボタン
+            </div>
+            <div className="grid gap-2 shadow-md my-4 p-6 bg-white">
                 <h3 className="text-md">このブログを書いた人</h3>
                 <div className="grid grid-cols-3">
                     <div>
@@ -53,8 +56,9 @@ const Post: React.FC<PropsType>  = ({ data })=>{
                     <div className="col-span-2">
                         <h4 className="font-bold my-4">mizunomi32</h4>
                         <p className="my-2">Software developer.</p>
+                        <p className="my-2">小・中学生向けプログラミングスクール『アンズテック』の運営や小・中学生向けプログラミング学習アプリ『アポロン』の開発運営を行っている。</p>
                         <div className="text-right pl-4">
-                            <Link to="/about" className="text-blue-600">詳しく見る</Link>
+                            <Link to="/" className="text-blue-600">詳しく見る</Link>
                         </div>
                     </div>
                 </div>
