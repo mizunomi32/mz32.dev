@@ -28,7 +28,7 @@ body {
         @apply text-4xl font-bold py-4 border-b-2 border-orange-300;
     }
     blockquote {
-        @apply bg-white pr-8 pl-12 py-4 shadow-lg border-l-8 border-orange-300 relative;
+        @apply bg-white pr-8 pl-12 py-4 shadow-lg border-l-8 border-orange-300 my-4 relative;
         &::before{
             @apply absolute text-orange-300;
             top: 7px;
