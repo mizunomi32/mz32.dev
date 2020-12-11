@@ -29,7 +29,7 @@ const Layout:React.FC<LayoutProp> = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
-        className="max-w-screen-md m-0 mx-auto pt-0 pb-6 px-4"
+        className="max-w-screen-lg m-0 mx-auto pt-0 pb-6 px-4"
       >
         <main className="w-full h-full grid gap-2">{children}</main>
         <Footer siteTitle={data.site.siteMetadata.title} />

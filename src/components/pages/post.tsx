@@ -1,10 +1,23 @@
 import React from "react"
 import { Link, graphql } from "gatsby";
+import {
+    FacebookShareButton,
+    FacebookIcon,
+    TwitterShareButton,
+    TwitterIcon,
+    LineShareButton,
+    LineIcon,
+    PocketShareButton,
+    PocketIcon,
+    EmailShareButton,
+    EmailIcon,
+  } from 'react-share';
 
 import Layout from "@templates/layout";
 import Image from "@atoms/image";
 import SEO from "@atoms/seo"
 import Heading from "@atoms/heading";
+import ShareBtns from "@molecules/shareBtns";
 
 type postQueryType = {
     markdownRemark: {
@@ -44,14 +57,12 @@ const Post: React.FC<PropsType>  = ({ data })=>{
             dangerouslySetInnerHTML={{
             __html: `${ post.html }`,
             }} />
-            <div>
-                ソーシャルボタン
-            </div>
+            <ShareBtns url="https'//localhost:8000"/>
             <div className="grid gap-2 shadow-md my-4 p-6 bg-white">
                 <h3 className="text-md">このブログを書いた人</h3>
                 <div className="grid grid-cols-3">
                     <div>
-                      <div className="roundedImage w-32 h-32"><Image filename="mizunomi32.png" alt="mizunomi32" /></div>
+                      <div className="roundedImage w-32 h-32 m-auto"><Image filename="mizunomi32.png" alt="mizunomi32" /></div>
                     </div>
                     <div className="col-span-2">
                         <h4 className="font-bold my-4">mizunomi32</h4>
@@ -62,7 +73,6 @@ const Post: React.FC<PropsType>  = ({ data })=>{
                         </div>
                     </div>
                 </div>
-                
             </div>
         </div>
         

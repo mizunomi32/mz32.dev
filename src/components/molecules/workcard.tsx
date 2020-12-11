@@ -1,5 +1,4 @@
-import React from "react";
-import { ReactNode } from 'react'
+import React, { ReactNode } from 'react'
 
 import Image from "@atoms/image";
 import Heading from "@atoms/heading";

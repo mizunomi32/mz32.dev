@@ -8,7 +8,7 @@ const Header:React.FC<HeaderProps>  = ({ siteTitle }) => (
   <header
     className="bg-orange-500 mb-6 shadow-md"
   >
-    <nav className="flex items-center justify-between flex-wrap bg-orange-500 p-6 max-w-screen-md mx-auto">
+    <nav className="flex items-center justify-between flex-wrap bg-orange-500 p-6 max-w-screen-lg mx-auto">
   <div className="flex items-center flex-shrink-0 text-white mr-6">
     <Link to="/" className="font-semibold text-xl tracking-tight">mz32.dev</Link>
   </div>
