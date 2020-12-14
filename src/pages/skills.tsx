@@ -30,10 +30,13 @@ const IndexPage: React.FC = () => {
             Java
           </div>
           <div>
+            Kotlin
+          </div>
+          <div>
             TypeScript
           </div>
           <div>
-            ruby on rails
+          Ruby on Rails
           </div>
           <div>
             ReactJs
@@ -42,19 +45,19 @@ const IndexPage: React.FC = () => {
             Flask
           </div>
           <div>
-            Django
+          Django
           </div>
           <div>
-            Gatuby
+            Gatuby.js
           </div>
           <div>
             Wordpress
           </div>
           <div>
-            Fuellphp
+            FuelPHP
           </div>
           <div>
-            lalavel
+            Laravel
           </div>
         </div>
         <Heading level={3} className="text-center">Like</Heading>
@@ -66,7 +69,6 @@ const IndexPage: React.FC = () => {
             NeoVim / Vim
           </div>
         </div>
-        <p className="text-center">Softwear developer.</p>
       </div>
     </Layout>
   )
