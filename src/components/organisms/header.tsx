@@ -28,9 +28,9 @@ const Header:React.FC<HeaderProps>  = ({ siteTitle }) => (
       <Link to="/works" className="block mt-4 lg:inline-block lg:mt-0 text-orange-200 hover:text-white mr-4">
        Works
       </Link>
-      <Link to="/contacts" className="block mt-4 lg:inline-block lg:mt-0 text-orange-200 hover:text-white mr-4">
+      {/* <Link to="/contacts" className="block mt-4 lg:inline-block lg:mt-0 text-orange-200 hover:text-white mr-4">
         Contacts
-      </Link>
+      </Link> */}
       <Link to="/post/" className="block mt-4 lg:inline-block lg:mt-0 text-orange-200 hover:text-white mr-4">
         Post
       </Link>
